@@ -1,0 +1,33 @@
+h1{
+    text-align: center;
+    background-color: rgb(187, 29, 29);
+    padding: 17px;
+    color: black;
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+    display: flex;
+    background-color: black;
+}
+ul{
+    display: flex;
+    padding: 15px;
+    font-size: 18px;
+}
+li{
+    padding-left: 40px;
+    color: aliceblue;
+    text-decoration: none;
+    
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+footer{
+    color:aliceblue;
+    font-size: 17px;
+    background-color: black;
+    padding: 25px;
+}

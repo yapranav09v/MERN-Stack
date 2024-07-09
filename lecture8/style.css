@@ -1,0 +1,22 @@
+p{
+   background-color: burlywood;  
+   font-size: 30px;
+   font-weight: bold; 
+}
+
+a{
+    color: white;
+    background-color: black;
+    padding: 25px;
+}
+
+#div1{
+    background-color: brown;
+    padding: 25px;
+}
+
+span{
+    color: red;
+    background-color: chartreuse;
+    padding: 25px;
+}

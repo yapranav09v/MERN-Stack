@@ -1,0 +1,14 @@
+div{
+    border-radius: 0cap;
+}
+
+th{
+    border: 2px solid black;
+}
+
+td{
+    border: 2px solid black;
+}
+caption{
+    font-size: large;
+}

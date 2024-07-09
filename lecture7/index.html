@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - In html</title>
+</head>
+<body>
+    <h1>Making a TA form</h1>
+    <div>
+        <form action="post">
+            <label for="username">Enter your username</label>
+            <input type="text" name="username" id="username" placeholder="enter your username">
+        </form>    
+    </div>
+    <div>
+        <form action="post">
+            <label for="password">Enter your password</label>
+            <input type="password" name="password" id="password" placeholder="enter your password">
+        </form>
+    </div>
+    <div>
+        <form action="post">
+            <label for="male">male</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="female">female</label>
+            <input type="radio" name="gender" id="female" value="female">
+        </form>
+    </div>
+    <div>
+        <form action="post">
+            <label for="checkbox">Varify your mark</label>
+            <input type="checkbox" name="checkbox" id="checkbox">
+        </form>
+    </div>
+    <div>
+        <label for="comment">Enter your comment here</label><br>
+        <textarea name="comment" id="comment" rows="5" cols="30"></textarea>
+    </div>
+    <div>
+        <label for="fruits">Fruits</label>
+        <select name="fruits" id="fruits">
+            <option value="apple">apple</option>
+            <option value="banana">banana</option>
+            <option value="avacado">avacado</option>
+            <option value="grapes">grapes</option>
+        </select>
+    </div><br>
+    <div>
+        <button>
+            submit
+        </button>
+    </div>
+   
+</body>
+</html>
