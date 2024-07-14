@@ -1,0 +1,29 @@
+*{
+    margin: 0%;
+    padding:0%;
+}
+div{
+    background-color: blueviolet;
+    display: inline-block;
+    font-size: large;
+    padding: 30px;
+    margin: 30px;
+}
+#div1{
+    background-color: black;
+}
+span{
+    display:inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: 900;
+    background-color: aliceblue;
+
+    
+}
+#span1{
+    display: flex;
+}
+body{
+    background-color: gray;
+}

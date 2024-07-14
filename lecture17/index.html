@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of selectors</title>
+</head>
+<body>
+    <style>
+        div{
+            background-color: aqua;
+            color: rebeccapurple;
+        }
+        #h44{
+            background-color: black;
+            color: aliceblue;
+        }
+        .mcs{
+            background-color: blue;
+            color: red;
+            font-size: 18px;
+            font-weight: 800px;
+        }
+
+        /* ascendent selectors */
+        span > p{
+            background-color: blue;
+            color: wheat;
+        }
+
+        /* pseudo selectors */
+        a:visited{
+            color:red;
+        }
+        a:link{
+            color:black;
+        }
+        a:active{
+            color:brown;
+        }
+        a:hover{
+            color:blue;
+        }
+
+        /*Universal selector*/
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+
+    </style>
+    <div>
+        <p>this is para</p>
+    </div>
+    <span>
+        <p>this is span</p>
+    </span>
+
+    <div id="h44">
+        <h4>this is for id</h4>
+    </div>
+
+    <div class="mcs">
+        <h5>this is for class1</h5>
+    </div>
+    <div class="mcs">
+        <h5>this is for class2</h5>
+    </div>
+
+    <div id="anc">
+        <a href="https://google.com">Google</a>
+        <a href="https://youtube.com">Youtube</a>
+    </div>
+    
+    
+</body>
+</html>

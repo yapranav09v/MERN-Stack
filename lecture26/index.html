@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css overflow property</title>
+</head>
+<body>
+    <style>
+        .box{
+            width: 30vw;
+            height: 20vh;
+            border: 2px solid black;
+            overflow:scroll;
+            background-color: aquamarine;
+            
+        }
+        .set p{
+            width: 30vw;
+            height: 20vh;
+            border: 2px solid black;
+            overflow: scroll;
+            white-space: nowrap;
+            text-overflow:ellipsis;
+        }
+    </style>
+    <div>
+        <p class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore distinctio in labore facere, eveniet corporis deleniti vero temporibus iste, totam atque nihil repellendus officiis odit natus voluptas quas consequuntur maxime ipsam! Laudantium sit saepe odit excepturi quaerat. Doloribus, accusamus animi.</p>
+    </div>
+    <div class="set">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati quam aut nulla perferendis dolore sapiente atque veniam soluta, maxime illum architecto dolorem? Autem aspernatur, harum incidunt, ullam voluptates qui hic aliquam quaerat in deserunt voluptatem ex iste facilis? Qui vitae laudantium libero alias laborum, atque amet nobis animi. Dicta?</p>
+    </div>
+</body>
+</html>

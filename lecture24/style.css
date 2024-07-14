@@ -1,0 +1,22 @@
+.box{
+    border: 2px solid black;
+    padding: 25px;
+    box-shadow: 3px 3px 3px grey ;
+}
+p{
+    font-size: 20px;
+    text-shadow: 2px 0.5px 2px gray ;
+}
+
+h2{
+    font-size: 25px;
+    border: 2px solid black;
+    border-radius: 3px;
+    outline:2px solid green;
+    outline-offset: 8px;
+}
+h3{
+    border:2px solid black;
+    border-radius:50cap
+    
+}
