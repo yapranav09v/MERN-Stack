@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css transition</title>
+</head>
+<body>
+    <style>
+        .container{
+            height: 50vh;
+            width: 60vw;
+            background-color: aqua;
+        }
+        .box{
+            height: 10vh;
+            width:10vw;
+            background-color: blue;
+
+            /* transition-property: transform;
+            transition-duration: 3s;
+            transition-timing-function: ease-in;
+            transition-delay: 2ms; */
+        }
+        .box:hover{
+            transform: translateX(10vw) translateY(10vh);
+            background-color: blueviolet;
+            transition: all 2s ease-in-out 2ms;
+        }
+        .transition{
+            /* transform: translateX(10vw) translateY(10vh);
+            background-color: blueviolet; */
+            
+        }
+    </style>
+    
+    <div class="container">
+        <div class="box transition"></div>
+    </div>
+</body>
+</html>

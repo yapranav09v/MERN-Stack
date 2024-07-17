@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on selectors in css</title>
+</head>
+<body>
+    <style>
+        .dd::before{
+            color:red;
+        }
+        .dd::after{
+            color:blue;
+        }
+        .dd::selection{
+            color: #bed01d;
+            background-color: red;
+        }
+        .dd::first-letter{
+            color: sienna;
+            font-size: 34px;
+        }
+    </style>
+    <div class="myc">
+        <div class="dd">this is dd1</div>
+        <div class="dd">this is dd1</div>
+        <div class="dd">this is dd1</div>
+    </div>
+</body>
+</html>
