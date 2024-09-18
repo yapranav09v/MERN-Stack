@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object fit in css</title>
+</head>
+<body>
+    <style>
+        .container{
+            height: 450px;
+            width: 450px;
+            background-color: rgba(191, 224, 213, 0.723);
+            border: 2px solid black;
+            margin: 10px;
+        }
+        .container img{
+            height: 450px;
+            width: 450px;
+            object-fit:cover;
+            object-position: top right;
+            object-position: top 10px;
+        }
+        .background{
+            border: 2px solid black;
+            height: 450px;
+            width: 450px;
+            margin: 10px;
+            background-image: url(https://cdn.pixabay.com/photo/2024/02/26/19/39/monochrome-image-8598798_640.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-color: aliceblue;
+        }
+    </style>
+    
+    <div class="container">
+        <img src="https://ia801202.us.archive.org/11/items/06-07-2016_Images_Images_page_1/02_PT_hero_42_153645159.jpg" alt="water image">
+    </div>
+    <div class="background">
+        <!-- <img src="https://cdn.pixabay.com/photo/2024/02/26/19/39/monochrome-image-8598798_640.jpg" alt="dogy"> -->
+    </div>
+</body>
+</html>

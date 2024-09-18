@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css bounce animation</title>
+</head>
+<body>
+
+    <style>
+        .container{
+            background-color: aqua;
+            height: 60vh;
+            width: auto;
+            display: flex;
+            align-items: end;
+        }
+        .ball{
+            background-color: blueviolet;
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            box-shadow: 2px 2px 12px inset;
+            animation: animx 3s linear infinite, animy 3s ease-out infinite alternate;
+
+        }
+        @keyframes animx {
+            from{
+                left: 0%;
+            }
+            to{
+                transform: translateX(50vw);
+            }
+        }
+        @keyframes animy {
+            from{
+                transform: translateY(0px);
+            }
+            to{
+                transform: translateY(50vh);
+            }
+            
+        }
+    </style>
+
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+    
+</body>
+</html>

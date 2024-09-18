@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css animation</title>
+</head>
+<body>
+    <style>
+        .container{
+            background-color: pink;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items:baseline;
+
+
+        }
+        .box{
+            height: 65px;
+            width: 65px;
+            background-color: rgb(188, 136, 237);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:purple;
+            font-weight: 600;
+            animation-name: pranavAnimation;
+            animation-duration: 2s;
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction:alternate-reverse;
+            animation-play-state: running;
+            border-radius: 50% 50%;
+            
+        }
+        @keyframes pranavAnimation{
+            from{
+
+            }
+            to{
+                background-color:blueviolet;
+                transform: translatey(50vh);
+            }
+        }
+    </style>
+    
+    <div class="container">
+        <div class="box">box</div>
+    </div>
+</body>
+</html>
