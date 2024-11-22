@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event bubling - condition</title>
+    <style>
+        .container{
+            margin: 14px;
+            padding: 15px;
+            background-color: aqua;
+            border: 2px solid black;
+        }
+        .childContainer{
+            margin: 14px;
+            padding: 15px;
+            background-color: skyblue;
+            border: 2px solid black;
+        }
+        .child{
+            margin: 14px;
+            padding: 15px;
+            background-color: blue;
+            border: 2px solid black;
+        }
+        .circle{
+            margin:15px;
+            height: 150px;
+            width: 150px;
+            background-color: yellow;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="childContainer" id="childContainer">
+            <div class="child">
+                hey there i am a child
+            </div>
+        </section>
+    </div>
+    <caption>This occures , when we click on  inner child there parent and parents parent also get trigger or propageted</caption><br><br>
+    <h2>Colour changing box</h2>
+    <div class="circle">
+
+    </div>
+    <script>
+        let con = document.querySelector('.container')
+        con.addEventListener('click', (e)=>{
+            alert("Container clicked")
+        })
+
+        let childCon = document.querySelector('.childContainer')
+        childCon.addEventListener('click',(e)=>{
+            e.stopPropagation()       //stoping progation or event bubbling
+            alert("childContainer clicked")
+        })
+
+        let child = document.querySelector('.child')
+        child.addEventListener('click', (e)=>{
+            alert("child clicked")
+        })
+
+        function getRandomColor()
+        {
+            let val1 = 0 + math.ceil() * 250
+            let val2 = 0 + math.ceil() * 250
+            let val3 = 0 + math.ceil() * 250
+
+            return 'rgb(${val1}, ${val2}, ${val3})'
+        }
+
+        setInterval(() => {
+            document.querySelector('.circle').style.background = getRandomColor()
+        }, 1000);
+    </script>
+</body>
+</html>

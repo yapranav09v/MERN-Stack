@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .light{
+            background-color: rgba(242, 255, 0, 0.829);
+            margin: 20px;
+            width: 250px;
+            height: 250px;
+            border: 2px solid black;
+            border-radius: 50%;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body style="background-color: teal;">
+    <div class="container">
+        <div class="box">'hey ther i am pranav'</div>
+        <div class=" nolight light "></div>
+    </div>
+    <script>
+        let div = document.createElement('div')
+        div.innerHTML = "hey this is <b>inserted</b> div"
+        div.setAttribute("class", "created")
+        
+        document.querySelector('.container').append(div)
+
+        let cont = document.querySelector('.container')
+        cont.insertAdjacentHTML("afterbegin", "inserted by <b>insertAdjacentHTML</b>")
+  //      let q = document.querySelector('.container').classList.toggle('.light')
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
